@@ -468,37 +468,17 @@ export default class AccountSample extends LitElement {
           <div class="row-layout buttons-1">
             <igc-button class="button">
               <span class="material-icons">
-                person_add
-              </span>
-              <span>Contact</span>
-              <igc-ripple></igc-ripple>
-            </igc-button>
-            <igc-button class="button">
-              <span class="material-icons">
-                star_border
-              </span>
-              <span>New Opportunity</span>
-              <igc-ripple></igc-ripple>
-            </igc-button>
-            <igc-button class="button">
-              <span class="material-icons">
-                error_outline
-              </span>
-              <span>New Case</span>
-              <igc-ripple></igc-ripple>
-            </igc-button>
-            <igc-button class="button">
-              <span class="material-icons">
-                note_add
-              </span>
-              <span>Add note</span>
-              <igc-ripple></igc-ripple>
-            </igc-button>
-            <igc-button class="button">
-              <span class="material-icons">
                 file_copy
               </span>
               <span>Add files</span>
+              <igc-ripple></igc-ripple>
+            </igc-button>
+            <igc-button class="button">
+              Button
+              <igc-ripple></igc-ripple>
+            </igc-button>
+            <igc-button variant="outlined" class="button">
+              Button
               <igc-ripple></igc-ripple>
             </igc-button>
           </div>
