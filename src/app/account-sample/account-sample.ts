@@ -485,6 +485,20 @@ export default class AccountSample extends LitElement {
               <igc-ripple></igc-ripple>
             </igc-button>
           </div>
+          <div class="row-layout page-title-1">
+            <igc-button ?disabled="${true}" class="button">
+              Button
+              <igc-ripple></igc-ripple>
+            </igc-button>
+            <igc-button variant="flat" ?disabled="${true}" class="button">
+              Button
+              <igc-ripple></igc-ripple>
+            </igc-button>
+            <igc-button variant="outlined" ?disabled="${true}" class="button">
+              Button
+              <igc-ripple></igc-ripple>
+            </igc-button>
+          </div>
           <igc-tabs class="tabs">
             <igc-tab-panel class="column-layout tab-item-content">
               <div class="column-layout group_9">
