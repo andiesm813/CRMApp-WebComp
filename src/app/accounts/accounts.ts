@@ -5,7 +5,7 @@ import { defineComponents, IgcButtonComponent, IgcDialogComponent, IgcDropdownCo
 import '@infragistics/igniteui-webcomponents-grids/grids/combined.js';
 import NorthwindService from '../service/northwind-service';
 
-defineComponents(IgcButtonComponent, IgcIconComponent, IgcRippleComponent, IgcSelectComponent, IgcInputComponent, IgcDropdownComponent, IgcDialogComponent);
+defineComponents(IgcButtonComponent, IgcRippleComponent, IgcIconComponent, IgcSelectComponent, IgcInputComponent, IgcDropdownComponent, IgcDialogComponent);
 
 @customElement('app-accounts')
 export default class Accounts extends LitElement {
@@ -62,6 +62,15 @@ export default class Accounts extends LitElement {
       min-height: 50px;
       flex-shrink: 0;
     }
+    .group_3 {
+      justify-content: flex-start;
+      align-items: center;
+      align-content: flex-start;
+      gap: 16px;
+      position: relative;
+      min-width: 50px;
+      min-height: 50px;
+    }
     .header {
       flex-wrap: wrap;
       justify-content: space-between;
@@ -80,7 +89,7 @@ export default class Accounts extends LitElement {
       min-width: 50px;
       min-height: 50px;
     }
-    .group_3 {
+    .group_4 {
       background-color: #DAE5D4;
       justify-content: center;
       align-items: center;
@@ -109,14 +118,14 @@ export default class Accounts extends LitElement {
       min-width: 50px;
       flex-shrink: 0;
     }
-    .group_4 {
+    .group_5 {
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: center;
       align-content: flex-start;
       gap: 16px;
     }
-    .group_5 {
+    .group_6 {
       justify-content: flex-start;
       align-items: center;
       align-content: flex-start;
@@ -125,7 +134,7 @@ export default class Accounts extends LitElement {
       min-height: 50px;
       flex-shrink: 0;
     }
-    .group_6 {
+    .group_7 {
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: stretch;
@@ -136,7 +145,7 @@ export default class Accounts extends LitElement {
       min-width: 50px;
       min-height: 50px;
     }
-    .group_7 {
+    .group_8 {
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
@@ -148,7 +157,7 @@ export default class Accounts extends LitElement {
       max-height: 600px;
       flex-shrink: 0;
     }
-    .group_8 {
+    .group_9 {
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
@@ -157,7 +166,7 @@ export default class Accounts extends LitElement {
       min-height: 50px;
       flex-shrink: 0;
     }
-    .group_9 {
+    .group_10 {
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: flex-start;
@@ -167,7 +176,7 @@ export default class Accounts extends LitElement {
       min-width: 50px;
       min-height: 50px;
     }
-    .group_10 {
+    .group_11 {
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
@@ -178,7 +187,7 @@ export default class Accounts extends LitElement {
       flex-grow: 1;
       flex-basis: 0;
     }
-    .group_11 {
+    .group_12 {
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
@@ -186,7 +195,7 @@ export default class Accounts extends LitElement {
       margin: 0 0 5px;
       min-width: 50px;
     }
-    .group_12 {
+    .group_13 {
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: flex-start;
@@ -197,7 +206,7 @@ export default class Accounts extends LitElement {
       min-height: 50px;
       flex-shrink: 0;
     }
-    .group_13 {
+    .group_14 {
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: stretch;
@@ -206,6 +215,62 @@ export default class Accounts extends LitElement {
       position: relative;
       min-width: 50px;
       min-height: 50px;
+    }
+    .button {
+      height: max-content;
+      min-width: min-content;
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+    .user-input {
+      height: max-content;
+      min-width: min-content;
+      flex-shrink: 0;
+    }
+    .input {
+      height: max-content;
+      min-width: 120px;
+      flex-shrink: 0;
+    }
+    .dropdown {
+      min-width: min-content;
+    }
+    .user-input_1 {
+      height: max-content;
+    }
+    .user-input_2 {
+      height: max-content;
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+    .button_1 {
+      margin: 8px 16px 16px 0;
+      height: max-content;
+      min-width: min-content;
+    }
+    .user-input_3::part(base) {
+      color: hsla(var(--ig-primary-500));
+      background-color: hsla(var(--ig-secondary-100));
+    }
+    .user-input_4::part(base) {
+      color: hsla(var(--ig-primary-500));
+      background-color: hsla(var(--ig-secondary-100));
+    }
+    .user-input_5::part(base) {
+      color: hsla(var(--ig-primary-500));
+      background-color: hsla(var(--ig-secondary-100));
+    }
+    .user-input_6::part(base) {
+      color: hsla(var(--ig-primary-500));
+    }
+    .dropdown::part(base) {
+      height: max-content;
+    }
+    .button_1::part(base) {
+      color: hsla(var(--ig-surface-500));
+    }
+    .textarea {
+      height: max-content;
     }
     .image {
       object-fit: cover;
@@ -245,56 +310,6 @@ export default class Accounts extends LitElement {
       margin: 0 0 8px;
       height: max-content;
     }
-    .textarea {
-      height: max-content;
-    }
-    .user-input {
-      height: max-content;
-      min-width: min-content;
-      flex-shrink: 0;
-    }
-    .input {
-      height: max-content;
-      min-width: 120px;
-      flex-shrink: 0;
-    }
-    .dropdown {
-      min-width: min-content;
-    }
-    .user-input_1 {
-      height: max-content;
-    }
-    .user-input_2 {
-      height: max-content;
-      flex-grow: 1;
-      flex-basis: 0;
-    }
-    .button {
-      margin: 8px 16px 16px 0;
-      height: max-content;
-      min-width: min-content;
-    }
-    .user-input_3::part(base) {
-      color: hsla(var(--ig-primary-500));
-      background-color: hsla(var(--ig-secondary-100));
-    }
-    .user-input_4::part(base) {
-      color: hsla(var(--ig-primary-500));
-      background-color: hsla(var(--ig-secondary-100));
-    }
-    .user-input_5::part(base) {
-      color: hsla(var(--ig-primary-500));
-      background-color: hsla(var(--ig-secondary-100));
-    }
-    .user-input_6::part(base) {
-      color: hsla(var(--ig-primary-500));
-    }
-    .dropdown::part(base) {
-      height: max-content;
-    }
-    .button::part(base) {
-      color: hsla(var(--ig-surface-500));
-    }
     .grid {
       flex-grow: 1;
       flex-basis: 0;
@@ -328,9 +343,23 @@ export default class Accounts extends LitElement {
       <div class="row-layout group">
         <div class="column-layout group_1">
           <div class="column-layout group_2">
+            <div class="row-layout group_3">
+              <igc-button class="button">
+                Button
+                <igc-ripple></igc-ripple>
+              </igc-button>
+              <igc-button variant="flat" class="button">
+                Button
+                <igc-ripple></igc-ripple>
+              </igc-button>
+              <igc-button variant="outlined" class="button">
+                Button
+                <igc-ripple></igc-ripple>
+              </igc-button>
+            </div>
             <div class="row-layout header">
               <div class="row-layout page-title">
-                <div class="row-layout group_3">
+                <div class="row-layout group_4">
                   <img src="/src/assets/Accounts Icon - Green.svg" class="image" />
                 </div>
                 <h6 class="h6">
@@ -362,7 +391,7 @@ export default class Accounts extends LitElement {
               </div>
             </div>
             <div class="row-layout filters-and-sorting">
-              <div class="row-layout group_4">
+              <div class="row-layout group_5">
                 <igc-select ?outlined="${false}" value="2" class="user-input">
                   <igc-select-item value="1">
                     My Accounts
@@ -379,7 +408,7 @@ export default class Accounts extends LitElement {
                   </span>
                 </igc-input>
               </div>
-              <div class="row-layout group_5">
+              <div class="row-layout group_6">
                 <igc-button variant="flat" @click=${() => this.dropdown?.toggle(this.button)} id="button" class="user-input user-input_6">
                   <span>Recently Updated</span>
                   <span class="material-icons">
@@ -413,17 +442,17 @@ export default class Accounts extends LitElement {
         </div>
       </div>
       <igc-dialog ?closeOnOutsideSelect="${true}" ?closeOnEscape="${true}" id="new-account-dialog">
-        <div class="column-layout group_6">
+        <div class="column-layout group_7">
           <h6 class="h6_1">
             New Account
           </h6>
-          <div class="column-layout group_7">
-            <div class="column-layout group_8">
+          <div class="column-layout group_8">
+            <div class="column-layout group_9">
               <p class="typography__subtitle-2 text">
                 ACCOUNT INFORMATION
               </p>
-              <div class="row-layout group_9">
-                <div class="column-layout group_10">
+              <div class="row-layout group_10">
+                <div class="column-layout group_11">
                   <igc-input label="Account Name" ?outlined="${false}" class="user-input_1">
                     <span slot="suffix">
                       <span class="material-icons icon">
@@ -469,8 +498,8 @@ export default class Accounts extends LitElement {
                   <igc-input label="Website" ?outlined="${false}" class="user-input_1"></igc-input>
                   <span class="textarea">Textarea not yet available in WebComponents</span>
                 </div>
-                <div class="column-layout group_10">
-                  <div class="column-layout group_11">
+                <div class="column-layout group_11">
+                  <div class="column-layout group_12">
                     <p class="typography__caption text_1">
                       Account Owner
                     </p>
@@ -532,8 +561,8 @@ export default class Accounts extends LitElement {
                 </div>
               </div>
             </div>
-            <div class="row-layout group_12">
-              <div class="column-layout group_10">
+            <div class="row-layout group_13">
+              <div class="column-layout group_11">
                 <p class="typography__subtitle-2 text_3">
                   BILLING INFORMATION
                 </p>
@@ -545,11 +574,11 @@ export default class Accounts extends LitElement {
                   </span>
                 </igc-input>
                 <igc-input label="Street" ?outlined="${false}" class="user-input_1"></igc-input>
-                <div class="row-layout group_13">
+                <div class="row-layout group_14">
                   <igc-input label="City" ?outlined="${false}" class="user-input_2"></igc-input>
                   <igc-input label="State / Province" ?outlined="${false}" class="user-input_2"></igc-input>
                 </div>
-                <div class="row-layout group_13">
+                <div class="row-layout group_14">
                   <igc-input label="Zip / Postal Code" ?outlined="${false}" class="user-input_2"></igc-input>
                   <igc-select ?outlined="${false}" label="Country" value="1" class="user-input_2">
                     <igc-select-item value="2">
@@ -570,7 +599,7 @@ export default class Accounts extends LitElement {
                   </igc-select>
                 </div>
               </div>
-              <div class="column-layout group_10">
+              <div class="column-layout group_11">
                 <p class="typography__subtitle-2 text_3">
                   SHIPPING INFORMATION
                 </p>
@@ -582,11 +611,11 @@ export default class Accounts extends LitElement {
                   </span>
                 </igc-input>
                 <igc-input label="Street" ?outlined="${false}" class="user-input_1"></igc-input>
-                <div class="row-layout group_13">
+                <div class="row-layout group_14">
                   <igc-input label="City" ?outlined="${false}" class="user-input_2"></igc-input>
                   <igc-input label="State / Province" ?outlined="${false}" class="user-input_2"></igc-input>
                 </div>
-                <div class="row-layout group_13">
+                <div class="row-layout group_14">
                   <igc-input label="Zip / Postal Code" ?outlined="${false}" class="user-input_2"></igc-input>
                   <igc-select ?outlined="${false}" label="Country" value="1" class="user-input_2">
                     <igc-select-item value="2">
@@ -611,11 +640,11 @@ export default class Accounts extends LitElement {
           </div>
         </div>
         <div slot="footer">
-          <igc-button variant="flat" @click=${() => this.newAccountDialog?.toggle()} class="button">
+          <igc-button variant="flat" @click=${() => this.newAccountDialog?.toggle()} class="button_1">
             Cancel
             <igc-ripple></igc-ripple>
           </igc-button>
-          <igc-button @click=${() => this.newAccountDialog?.toggle()} class="button">
+          <igc-button @click=${() => this.newAccountDialog?.toggle()} class="button_1">
             Save
             <igc-ripple></igc-ripple>
           </igc-button>
