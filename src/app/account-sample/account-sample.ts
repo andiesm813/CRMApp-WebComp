@@ -2,7 +2,7 @@ import { html, css, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { defineComponents, IgcAvatarComponent, IgcButtonComponent, IgcCheckboxComponent, IgcChipComponent, IgcExpansionPanelComponent, IgcIconComponent, IgcListComponent, IgcListItemComponent, IgcRippleComponent, IgcTabsComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcTabsComponent, IgcButtonComponent, IgcIconComponent, IgcRippleComponent, IgcExpansionPanelComponent, IgcAvatarComponent, IgcCheckboxComponent, IgcListComponent, IgcListItemComponent, IgcChipComponent);
+defineComponents(IgcButtonComponent, IgcRippleComponent, IgcTabsComponent, IgcIconComponent, IgcExpansionPanelComponent, IgcAvatarComponent, IgcCheckboxComponent, IgcListComponent, IgcListItemComponent, IgcChipComponent);
 
 @customElement('app-account-sample')
 export default class AccountSample extends LitElement {
@@ -365,21 +365,27 @@ export default class AccountSample extends LitElement {
     .button {
       height: max-content;
       min-width: min-content;
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+    .button_1 {
+      height: max-content;
+      min-width: min-content;
       flex-shrink: 0;
     }
     .checkbox {
       width: max-content;
       height: max-content;
     }
-    .button_1 {
+    .button_2 {
       height: max-content;
       flex-shrink: 0;
     }
-    .button::part(base) {
+    .button_1::part(base) {
       color: hsla(var(--ig-primary-500));
       background-color: hsla(var(--ig-secondary-100));
     }
-    .button_1::part(base) {
+    .button_2::part(base) {
       color: hsla(var(--ig-primary-500));
       background-color: hsla(var(--ig-secondary-100));
     }
@@ -465,39 +471,53 @@ export default class AccountSample extends LitElement {
       </div>
       <div class="row-layout group_7">
         <div class="column-layout group_8">
+          <div class="row-layout page-title-1">
+            <igc-button class="button">
+              Button
+              <igc-ripple></igc-ripple>
+            </igc-button>
+            <igc-button variant="flat" class="button">
+              Button
+              <igc-ripple></igc-ripple>
+            </igc-button>
+            <igc-button variant="outlined" class="button">
+              Button
+              <igc-ripple></igc-ripple>
+            </igc-button>
+          </div>
           <igc-tabs class="tabs">
             <igc-tab-panel class="column-layout tab-item-content">
               <div class="column-layout group_9">
                 <div class="row-layout buttons">
-                  <igc-button class="button">
+                  <igc-button class="button_1">
                     <span class="material-icons">
                       person_add
                     </span>
                     <span>Contact</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
-                  <igc-button class="button">
+                  <igc-button class="button_1">
                     <span class="material-icons">
                       star_border
                     </span>
                     <span>New Opportunity</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
-                  <igc-button class="button">
+                  <igc-button class="button_1">
                     <span class="material-icons">
                       error_outline
                     </span>
                     <span>New Case</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
-                  <igc-button class="button">
+                  <igc-button class="button_1">
                     <span class="material-icons">
                       note_add
                     </span>
                     <span>Add note</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
-                  <igc-button class="button">
+                  <igc-button class="button_1">
                     <span class="material-icons">
                       file_copy
                     </span>
@@ -643,21 +663,21 @@ export default class AccountSample extends LitElement {
             <igc-tab-panel class="column-layout tab-item-content">
               <div class="column-layout group_9">
                 <div class="row-layout buttons_1">
-                  <igc-button class="button">
+                  <igc-button class="button_1">
                     <span class="material-icons">
                       calendar_today
                     </span>
                     <span>New Meeting</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
-                  <igc-button class="button">
+                  <igc-button class="button_1">
                     <span class="material-icons">
                       star_border
                     </span>
                     <span>New task</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
-                  <igc-button class="button_1">
+                  <igc-button class="button_2">
                     <span class="material-icons">
                       call
                     </span>
