@@ -1,8 +1,8 @@
 import { html, css, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import { defineComponents, IgcButtonComponent, IgcRippleComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcButtonComponent, IgcIconComponent, IgcRippleComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcButtonComponent, IgcRippleComponent);
+defineComponents(IgcButtonComponent, IgcRippleComponent, IgcIconComponent);
 
 @customElement('app-account-sample')
 export default class AccountSample extends LitElement {
@@ -57,12 +57,33 @@ export default class AccountSample extends LitElement {
           Button
           <igc-ripple></igc-ripple>
         </igc-button>
+        <igc-button class="button">
+          <span class="material-icons">
+            add
+          </span>
+          <span>Button</span>
+          <igc-ripple></igc-ripple>
+        </igc-button>
         <igc-button variant="outlined" class="button">
           Button
           <igc-ripple></igc-ripple>
         </igc-button>
+        <igc-button variant="outlined" class="button">
+          <span class="material-icons">
+            add
+          </span>
+          <span>Button</span>
+          <igc-ripple></igc-ripple>
+        </igc-button>
         <igc-button variant="flat" class="button">
           Button
+          <igc-ripple></igc-ripple>
+        </igc-button>
+        <igc-button variant="flat" class="button">
+          <span class="material-icons">
+            add
+          </span>
+          <span>Button</span>
           <igc-ripple></igc-ripple>
         </igc-button>
       </div>
