@@ -1,8 +1,8 @@
 import { html, css, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import { defineComponents, IgcAvatarComponent, IgcButtonComponent, IgcCheckboxComponent, IgcChipComponent, IgcExpansionPanelComponent, IgcIconComponent, IgcListComponent, IgcListItemComponent, IgcRippleComponent, IgcTabsComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcButtonComponent, IgcExpansionPanelComponent, IgcIconComponent, IgcRippleComponent, IgcTabsComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcTabsComponent, IgcButtonComponent, IgcRippleComponent, IgcExpansionPanelComponent, IgcIconComponent, IgcAvatarComponent, IgcCheckboxComponent, IgcListComponent, IgcListItemComponent, IgcChipComponent);
+defineComponents(IgcTabsComponent, IgcButtonComponent, IgcIconComponent, IgcRippleComponent, IgcExpansionPanelComponent);
 
 @customElement('app-account-sample')
 export default class AccountSample extends LitElement {
@@ -139,7 +139,8 @@ export default class AccountSample extends LitElement {
     .tabs {
       min-width: 0;
       min-height: 0;
-      flex-shrink: 0;
+      flex-grow: 1;
+      flex-basis: 0;
     }
     .group_9 {
       justify-content: flex-start;
@@ -147,105 +148,16 @@ export default class AccountSample extends LitElement {
       align-content: flex-start;
       gap: 24px;
       position: relative;
-      padding: 24px 0 0;
-      min-width: 50px;
-      min-height: 50px;
-      flex-shrink: 0;
-    }
-    .group_10 {
-      justify-content: flex-start;
-      align-items: stretch;
-      align-content: flex-start;
-      position: relative;
-      min-width: 50px;
-      min-height: 50px;
-    }
-    .group_11 {
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: center;
-      align-content: flex-start;
-      gap: 16px;
-      position: relative;
-      min-width: 50px;
-      min-height: 50px;
-    }
-    .accordion {
-      overflow-y: auto;
-      flex-shrink: 0;
-    }
-    .buttons {
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: center;
-      align-content: flex-start;
-      gap: 16px;
-      position: relative;
-      min-width: 50px;
-    }
-    .group_12 {
-      justify-content: flex-start;
-      align-items: stretch;
-      align-content: flex-start;
-      gap: 12px;
-      position: relative;
-      min-width: 50px;
-      min-height: 50px;
-    }
-    .group_13 {
-      justify-content: flex-start;
-      align-items: center;
-      align-content: flex-start;
-      gap: 8px;
-      position: relative;
-      min-width: 50px;
-      flex-shrink: 0;
-    }
-    .group_14 {
-      justify-content: flex-start;
-      align-items: stretch;
-      align-content: flex-start;
-      gap: 8px;
-      position: relative;
-      min-width: 50px;
-      min-height: 50px;
-    }
-    .group_15 {
-      justify-content: flex-start;
-      align-items: baseline;
-      align-content: flex-start;
-      gap: 16px;
-      position: relative;
-      min-width: 50px;
-    }
-    .group_16 {
-      justify-content: flex-start;
-      align-items: center;
-      align-content: flex-start;
-      gap: 16px;
-      position: relative;
-      min-width: 50px;
-    }
-    .group_17 {
-      background-color: rgba(71, 124, 41, 0.2);
-      justify-content: center;
-      align-items: center;
-      align-content: flex-start;
-      position: relative;
-      width: 40px;
-      height: 40px;
-    }
-    .group_18 {
-      justify-content: flex-start;
-      align-items: stretch;
-      align-content: flex-start;
-      position: relative;
       min-width: 50px;
       min-height: 50px;
       flex-grow: 1;
       flex-basis: 0;
     }
-    .group_19 {
+    .accordion {
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+    .group_10 {
       background-color: hsla(var(--ig-surface-500));
       border-color: hsla(var(--ig-gray-200));
       border-width: 1px;
@@ -258,44 +170,6 @@ export default class AccountSample extends LitElement {
       padding: 16px;
       min-width: min-content;
       flex-grow: 1;
-    }
-    .buttons_1 {
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: center;
-      align-content: flex-start;
-      gap: 16px;
-      position: relative;
-    }
-    .group_20 {
-      justify-content: flex-start;
-      align-items: stretch;
-      align-content: flex-start;
-      gap: 2px;
-      position: relative;
-      min-width: 50px;
-      min-height: 50px;
-    }
-    .group_21 {
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: stretch;
-      align-content: flex-start;
-      gap: 2px;
-      position: relative;
-      min-width: 50px;
-      min-height: auto;
-      flex-shrink: 0;
-    }
-    .group_22 {
-      justify-content: flex-start;
-      align-items: stretch;
-      align-content: flex-start;
-      gap: 2px;
-      position: relative;
-      min-width: 50px;
-      min-height: auto;
-      flex-shrink: 0;
     }
     .image {
       object-fit: cover;
@@ -318,58 +192,6 @@ export default class AccountSample extends LitElement {
       height: max-content;
       min-width: min-content;
     }
-    .avatar {
-      --background: none;
-    }
-    .hyperlink {
-      color: hsla(var(--ig-primary-500));
-      height: max-content;
-      min-width: min-content;
-      flex-shrink: 0;
-    }
-    .text_2 {
-      height: max-content;
-      min-width: 140px;
-    }
-    .image_1 {
-      object-fit: cover;
-      width: 20px;
-      height: 20px;
-      flex-shrink: 0;
-    }
-    .text_3 {
-      color: hsla(var(--ig-gray-800));
-      height: max-content;
-      min-width: min-content;
-    }
-    .text_4 {
-      color: hsla(var(--ig-gray-600));
-      height: max-content;
-      min-width: min-content;
-    }
-    .chip {
-      width: max-content;
-      height: max-content;
-    }
-    .avatar_1::part(base) {
-      color: hsla(var(--ig-primary-500));
-      background-color: hsla(var(--ig-secondary-200));
-    }
-    .avatar_2::part(base) {
-      color: hsla(var(--ig-gray-500));
-    }
-    .avatar_3::part(base) {
-      color: hsla(var(--ig-gray-500));
-    }
-    .avatar_4::part(base) {
-      background-color: transparent;
-    }
-    .avatar_5::part(base) {
-      background-color: transparent;
-    }
-    .avatar_6::part(base) {
-      background-color: transparent;
-    }
     .tab-item-content {
       justify-content: flex-start;
       align-items: stretch;
@@ -383,32 +205,11 @@ export default class AccountSample extends LitElement {
     .button {
       height: max-content;
       min-width: min-content;
-      flex-grow: 1;
       flex-shrink: 0;
     }
-    .button_1 {
-      height: max-content;
-      min-width: min-content;
-      flex-shrink: 0;
-    }
-    .checkbox {
-      width: max-content;
-      height: max-content;
-    }
-    .button_2 {
-      height: max-content;
-      flex-shrink: 0;
-    }
-    .button_1::part(base) {
-      color: hsla(var(--ig-primary-500));
+    .button::part(base) {
+      color: hsla(var(--ig-primary-900));
       background-color: hsla(var(--ig-secondary-100));
-    }
-    .button_2::part(base) {
-      color: hsla(var(--ig-primary-500));
-      background-color: hsla(var(--ig-secondary-100));
-    }
-    .list {
-      height: max-content;
     }
   `;
 
@@ -490,354 +291,128 @@ export default class AccountSample extends LitElement {
       <div class="row-layout group_7">
         <div class="column-layout group_8">
           <igc-tabs class="tabs">
-            <igc-tab-panel class="column-layout tab-item-content">
+            <igc-tab-panel class="row-layout tab-item-content">
               <div class="column-layout group_9">
-                <div class="column-layout group_10">
-                  <div class="row-layout group_11">
-                    <igc-button class="button">
-                      Button
-                      <igc-ripple></igc-ripple>
-                    </igc-button>
-                    <igc-button ?disabled="${true}" class="button">
-                      Button
-                      <igc-ripple></igc-ripple>
-                    </igc-button>
-                    <igc-button variant="flat" class="button">
-                      Button
-                      <igc-ripple></igc-ripple>
-                    </igc-button>
-                    <igc-button variant="flat" ?disabled="${true}" class="button">
-                      Button
-                      <igc-ripple></igc-ripple>
-                    </igc-button>
-                    <igc-button variant="outlined" class="button">
-                      Button
-                      <igc-ripple></igc-ripple>
-                    </igc-button>
-                    <igc-button variant="outlined" ?disabled="${true}" class="button">
-                      Button
-                      <igc-ripple></igc-ripple>
-                    </igc-button>
-                  </div>
-                  <igc-accordion ?single-expand="${false}" class="accordion">
-                    <igc-expansion-panel>
-                      <p class="typography__body-1 content"></p>
-                      <span slot="title">Title goes here...</span>
-                    </igc-expansion-panel>
-                    <igc-expansion-panel>
-                      <p class="typography__body-1 content"></p>
-                      <span slot="title">Title goes here...</span>
-                    </igc-expansion-panel>
-                    <igc-expansion-panel>
-                      <p class="typography__body-1 content"></p>
-                      <span slot="title">Title goes here...</span>
-                    </igc-expansion-panel>
-                  </igc-accordion>
-                </div>
-                <div class="row-layout buttons">
-                  <igc-button class="button_1">
+                <div class="row-layout page-title-1">
+                  <igc-button class="button">
                     <span class="material-icons">
-                      person_add
+                      add
                     </span>
-                    <span>Contact</span>
+                    <span>Button</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
-                  <igc-button class="button_1">
+                  <igc-button class="button">
                     <span class="material-icons">
-                      star_border
+                      add
                     </span>
-                    <span>New Opportunity</span>
+                    <span>Button</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
-                  <igc-button class="button_1">
+                  <igc-button class="button">
                     <span class="material-icons">
-                      error_outline
+                      add
                     </span>
-                    <span>New Case</span>
+                    <span>Button</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
-                  <igc-button class="button_1">
+                  <igc-button class="button">
                     <span class="material-icons">
-                      note_add
+                      add
                     </span>
-                    <span>Add note</span>
+                    <span>Button</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
-                  <igc-button class="button_1">
+                  <igc-button class="button">
                     <span class="material-icons">
-                      file_copy
+                      add
                     </span>
-                    <span>Add files</span>
+                    <span>Button</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
                 </div>
                 <igc-accordion ?single-expand="${false}" class="accordion">
-                  <igc-expansion-panel indicator-position="end">
-                    <div class="column-layout group_12">
-                      <div class="row-layout group_13">
-                        <igc-avatar initials="JL" size="small" shape="circle" class="avatar avatar_1"></igc-avatar>
-                        <a href class="typography__body-2 hyperlink">
-                          Janine Labrune
-                        </a>
-                      </div>
-                      <div class="column-layout group_14">
-                        <div class="row-layout group_15">
-                          <p class="typography__subtitle-2 text_2">
-                            Account Name:
-                          </p>
-                          <p class="typography__body-2 text">
-                            Thomas Hardy
-                          </p>
-                        </div>
-                        <div class="row-layout group_15">
-                          <p class="typography__subtitle-2 text_2">
-                            Title:
-                          </p>
-                          <p class="typography__body-2 text">
-                            Owner
-                          </p>
-                        </div>
-                        <div class="row-layout group_16">
-                          <p class="typography__subtitle-2 text_2">
-                            Direct:
-                          </p>
-                          <igc-checkbox class="checkbox"></igc-checkbox>
-                        </div>
-                      </div>
-                    </div>
-                    <span slot="title">Related Contacts (1)</span>
+                  <igc-expansion-panel>
+                    <p class="typography__body-1 content"></p>
+                    <span slot="title">Title goes here...</span>
                   </igc-expansion-panel>
-                  <igc-expansion-panel indicator-position="end">
-                    <div class="column-layout group_12">
-                      <div class="row-layout group_13">
-                        <div class="row-layout group_17">
-                          <img src="/src/assets/Accounts Icon - Green.svg" class="image_1" />
-                        </div>
-                        <a href class="typography__body-2 hyperlink">
-                          Around The Horn
-                        </a>
-                      </div>
-                      <div class="column-layout group_14">
-                        <div class="row-layout group_15">
-                          <p class="typography__subtitle-2 text_2">
-                            Stage:
-                          </p>
-                          <p class="typography__body-2 text">
-                            Qualification
-                          </p>
-                        </div>
-                        <div class="row-layout group_15">
-                          <p class="typography__subtitle-2 text_2">
-                            Amount:
-                          </p>
-                          <p class="typography__body-2 text">
-                            Owner
-                          </p>
-                        </div>
-                        <div class="row-layout group_15">
-                          <p class="typography__subtitle-2 text_2">
-                            Close Date:
-                          </p>
-                          <p class="typography__body-2 text">
-                            9/12/2022
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <span slot="title">Opportunities (1)</span>
+                  <igc-expansion-panel>
+                    <p class="typography__body-1 content"></p>
+                    <span slot="title">Title goes here...</span>
                   </igc-expansion-panel>
-                  <igc-expansion-panel indicator-position="end">
-                    <igc-list class="list">
-                      <igc-list-item>
-                        <div slot="start">
-                          <igc-avatar size="small" shape="circle" class="avatar avatar_2">
-                            <span class="material-icons">insert_drive_file</span>
-                          </igc-avatar>
-                        </div>
-                        <div>
-                          <a href class="typography__body-2 content">
-                            Around-The-Horn-Contract-2022.docx
-                          </a>
-                        </div>
-                      </igc-list-item>
-                      <igc-list-item>
-                        <div slot="start">
-                          <igc-avatar size="small" shape="circle" class="avatar avatar_3">
-                            <span class="material-icons">insert_drive_file</span>
-                          </igc-avatar>
-                        </div>
-                        <div>
-                          <a href class="typography__body-2 content">
-                            Around-The-Horn-Contract-2021.docx
-                          </a>
-                        </div>
-                      </igc-list-item>
-                    </igc-list>
-                    <span slot="title">Contracts (2)</span>
-                  </igc-expansion-panel>
-                  <igc-expansion-panel indicator-position="end">
-                    <span slot="title">Cases (0)</span>
-                  </igc-expansion-panel>
-                  <igc-expansion-panel indicator-position="end">
-                    <span slot="title">Notes (0)</span>
-                  </igc-expansion-panel>
-                  <igc-expansion-panel indicator-position="end">
-                    <span slot="title">Files (0)</span>
+                  <igc-expansion-panel>
+                    <p class="typography__body-1 content"></p>
+                    <span slot="title">Title goes here...</span>
                   </igc-expansion-panel>
                 </igc-accordion>
               </div>
-              <div class="row-layout group_18"></div>
             </igc-tab-panel>
             <igc-tab ?selected="${true}">
               <span class="material-icons">info</span>
-              Related
+              Label
             </igc-tab>
             <igc-tab-panel class="row-layout tab-item-content"></igc-tab-panel>
-            <igc-tab>
+            <igc-tab ?disabled="${true}">
               <span class="material-icons">info</span>
-              Details
+              Label
             </igc-tab>
             <igc-tab-panel class="row-layout tab-item-content"></igc-tab-panel>
-            <igc-tab>
+            <igc-tab ?disabled="${true}">
               <span class="material-icons">info</span>
-              News
+              Label
             </igc-tab>
           </igc-tabs>
         </div>
-        <div class="column-layout group_19">
+        <div class="column-layout group_10">
           <igc-tabs class="tabs">
-            <igc-tab-panel class="column-layout tab-item-content">
+            <igc-tab-panel class="row-layout tab-item-content">
               <div class="column-layout group_9">
-                <div class="row-layout buttons_1">
-                  <igc-button class="button_1">
+                <div class="row-layout page-title-1">
+                  <igc-button class="button">
                     <span class="material-icons">
-                      calendar_today
+                      add
                     </span>
-                    <span>New Meeting</span>
+                    <span>Button</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
-                  <igc-button class="button_1">
+                  <igc-button class="button">
                     <span class="material-icons">
-                      star_border
+                      add
                     </span>
-                    <span>New task</span>
+                    <span>Button</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
-                  <igc-button class="button_2">
+                  <igc-button class="button">
                     <span class="material-icons">
-                      call
+                      add
                     </span>
-                    <span>Log a call</span>
+                    <span>Button</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
                 </div>
                 <igc-accordion ?single-expand="${false}" class="accordion">
-                  <igc-expansion-panel indicator-position="end">
-                    <igc-list class="list">
-                      <igc-list-item>
-                        <div slot="start">
-                          <igc-avatar src="/src/assets/Calendar-Avatar-Icon.svg" size="small" class="avatar avatar_4"></igc-avatar>
-                        </div>
-                        <div>
-                          <div class="column-layout group_20">
-                            <div class="row-layout group_21">
-                              <p class="typography__subtitle-2 text_3">
-                                Project Intro
-                              </p>
-                            </div>
-                            <div class="row-layout group_22">
-                              <p class="typography__caption text_4">
-                                11/1/2022
-                              </p>
-                              <p class="typography__caption text_4">
-                                -
-                              </p>
-                              <p class="typography__caption text_4">
-                                10am
-                              </p>
-                            </div>
-                            <igc-chip size="large" class="chip">
-                              Zoom Meeting
-                            </igc-chip>
-                          </div>
-                        </div>
-                      </igc-list-item>
-                      <igc-list-item>
-                        <div slot="start">
-                          <igc-avatar src="/src/assets/Calendar-Avatar-Icon.svg" size="small" class="avatar avatar_5"></igc-avatar>
-                        </div>
-                        <div>
-                          <div class="column-layout group_20">
-                            <div class="row-layout group_21">
-                              <p class="typography__subtitle-2 text_3">
-                                Sync Meeting
-                              </p>
-                            </div>
-                            <div class="row-layout group_22">
-                              <p class="typography__caption text_4">
-                                11/7/2022
-                              </p>
-                              <p class="typography__caption text_4">
-                                -
-                              </p>
-                              <p class="typography__caption text_4">
-                                2pm
-                              </p>
-                            </div>
-                            <igc-chip size="large" class="chip">
-                              On Site Meeting
-                            </igc-chip>
-                          </div>
-                        </div>
-                      </igc-list-item>
-                      <igc-list-item>
-                        <div slot="start">
-                          <igc-avatar src="/src/assets/Calendar-Avatar-Icon.svg" size="small" class="avatar avatar_6"></igc-avatar>
-                        </div>
-                        <div>
-                          <div class="column-layout group_20">
-                            <div class="row-layout group_21">
-                              <p class="typography__subtitle-2 text_3">
-                                Wrap Up Meeting
-                              </p>
-                            </div>
-                            <div class="row-layout group_22">
-                              <p class="typography__caption text_4">
-                                11/14/2022
-                              </p>
-                              <p class="typography__caption text_4">
-                                -
-                              </p>
-                              <p class="typography__caption text_4">
-                                4pm
-                              </p>
-                            </div>
-                            <igc-chip size="large" class="chip">
-                              Phone call
-                            </igc-chip>
-                          </div>
-                        </div>
-                      </igc-list-item>
-                    </igc-list>
-                    <span slot="title">Upcoming Events (3)</span>
+                  <igc-expansion-panel>
+                    <p class="typography__body-1 content"></p>
+                    <span slot="title">Title goes here...</span>
                   </igc-expansion-panel>
-                  <igc-expansion-panel indicator-position="end">
-                    <span slot="title">Tasks (0)</span>
+                  <igc-expansion-panel>
+                    <p class="typography__body-1 content"></p>
+                    <span slot="title">Title goes here...</span>
                   </igc-expansion-panel>
-                  <igc-expansion-panel indicator-position="end">
-                    <span slot="title">Call Logs (0)</span>
+                  <igc-expansion-panel>
+                    <p class="typography__body-1 content"></p>
+                    <span slot="title">Title goes here...</span>
                   </igc-expansion-panel>
                 </igc-accordion>
               </div>
             </igc-tab-panel>
             <igc-tab ?selected="${true}">
               <span class="material-icons">info</span>
-              Activity
+              Label
             </igc-tab>
             <igc-tab-panel class="row-layout tab-item-content"></igc-tab-panel>
-            <igc-tab>
+            <igc-tab ?disabled="${true}">
               <span class="material-icons">info</span>
-              Conversations
+              Label
             </igc-tab>
           </igc-tabs>
         </div>
