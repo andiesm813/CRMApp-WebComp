@@ -2,7 +2,7 @@ import { html, css, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { defineComponents, IgcAvatarComponent, IgcButtonComponent, IgcCheckboxComponent, IgcChipComponent, IgcExpansionPanelComponent, IgcIconComponent, IgcListComponent, IgcListItemComponent, IgcRippleComponent, IgcTabsComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcButtonComponent, IgcIconComponent, IgcRippleComponent, IgcTabsComponent, IgcExpansionPanelComponent, IgcAvatarComponent, IgcCheckboxComponent, IgcListComponent, IgcListItemComponent, IgcChipComponent);
+defineComponents(IgcTabsComponent, IgcButtonComponent, IgcIconComponent, IgcRippleComponent, IgcExpansionPanelComponent, IgcAvatarComponent, IgcCheckboxComponent, IgcListComponent, IgcListItemComponent, IgcChipComponent);
 
 @customElement('app-account-sample')
 export default class AccountSample extends LitElement {
@@ -136,15 +136,6 @@ export default class AccountSample extends LitElement {
       min-width: 576px;
       flex-grow: 2;
     }
-    .buttons-1 {
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: center;
-      align-content: flex-start;
-      gap: 16px;
-      position: relative;
-      min-width: 50px;
-    }
     .tabs {
       min-width: 0;
       min-height: 0;
@@ -160,6 +151,15 @@ export default class AccountSample extends LitElement {
       min-width: 50px;
       min-height: 50px;
       flex-shrink: 0;
+    }
+    .buttons {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: flex-start;
+      gap: 16px;
+      position: relative;
+      min-width: 50px;
     }
     .accordion {
       overflow-y: auto;
@@ -241,7 +241,7 @@ export default class AccountSample extends LitElement {
       min-width: min-content;
       flex-grow: 1;
     }
-    .buttons {
+    .buttons_1 {
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: center;
@@ -465,27 +465,10 @@ export default class AccountSample extends LitElement {
       </div>
       <div class="row-layout group_7">
         <div class="column-layout group_8">
-          <div class="row-layout buttons-1">
-            <igc-button class="button">
-              <span class="material-icons">
-                file_copy
-              </span>
-              <span>Add files</span>
-              <igc-ripple></igc-ripple>
-            </igc-button>
-            <igc-button class="button">
-              Button
-              <igc-ripple></igc-ripple>
-            </igc-button>
-            <igc-button variant="outlined" class="button">
-              Button
-              <igc-ripple></igc-ripple>
-            </igc-button>
-          </div>
           <igc-tabs class="tabs">
             <igc-tab-panel class="column-layout tab-item-content">
               <div class="column-layout group_9">
-                <div class="row-layout buttons-1">
+                <div class="row-layout buttons">
                   <igc-button class="button">
                     <span class="material-icons">
                       person_add
@@ -659,7 +642,7 @@ export default class AccountSample extends LitElement {
           <igc-tabs class="tabs">
             <igc-tab-panel class="column-layout tab-item-content">
               <div class="column-layout group_9">
-                <div class="row-layout buttons">
+                <div class="row-layout buttons_1">
                   <igc-button class="button">
                     <span class="material-icons">
                       calendar_today
