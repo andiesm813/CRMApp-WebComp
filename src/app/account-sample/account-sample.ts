@@ -136,12 +136,22 @@ export default class AccountSample extends LitElement {
       min-width: 576px;
       flex-grow: 2;
     }
+    .group_9 {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: flex-start;
+      gap: 16px;
+      position: relative;
+      min-width: 50px;
+      min-height: 50px;
+    }
     .tabs {
       min-width: 0;
       min-height: 0;
       flex-shrink: 0;
     }
-    .group_9 {
+    .group_10 {
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
@@ -165,7 +175,7 @@ export default class AccountSample extends LitElement {
       overflow-y: auto;
       flex-shrink: 0;
     }
-    .group_10 {
+    .group_11 {
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
@@ -174,7 +184,7 @@ export default class AccountSample extends LitElement {
       min-width: 50px;
       min-height: 50px;
     }
-    .group_11 {
+    .group_12 {
       justify-content: flex-start;
       align-items: center;
       align-content: flex-start;
@@ -183,7 +193,7 @@ export default class AccountSample extends LitElement {
       min-width: 50px;
       flex-shrink: 0;
     }
-    .group_12 {
+    .group_13 {
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
@@ -192,7 +202,7 @@ export default class AccountSample extends LitElement {
       min-width: 50px;
       min-height: 50px;
     }
-    .group_13 {
+    .group_14 {
       justify-content: flex-start;
       align-items: baseline;
       align-content: flex-start;
@@ -200,7 +210,7 @@ export default class AccountSample extends LitElement {
       position: relative;
       min-width: 50px;
     }
-    .group_14 {
+    .group_15 {
       justify-content: flex-start;
       align-items: center;
       align-content: flex-start;
@@ -208,7 +218,7 @@ export default class AccountSample extends LitElement {
       position: relative;
       min-width: 50px;
     }
-    .group_15 {
+    .group_16 {
       background-color: rgba(71, 124, 41, 0.2);
       justify-content: center;
       align-items: center;
@@ -217,7 +227,7 @@ export default class AccountSample extends LitElement {
       width: 40px;
       height: 40px;
     }
-    .group_16 {
+    .group_17 {
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
@@ -227,7 +237,7 @@ export default class AccountSample extends LitElement {
       flex-grow: 1;
       flex-basis: 0;
     }
-    .group_17 {
+    .group_18 {
       background-color: hsla(var(--ig-surface-500));
       border-color: hsla(var(--ig-gray-200));
       border-width: 1px;
@@ -249,7 +259,7 @@ export default class AccountSample extends LitElement {
       gap: 16px;
       position: relative;
     }
-    .group_18 {
+    .group_19 {
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
@@ -258,7 +268,7 @@ export default class AccountSample extends LitElement {
       min-width: 50px;
       min-height: 50px;
     }
-    .group_19 {
+    .group_20 {
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: stretch;
@@ -269,7 +279,7 @@ export default class AccountSample extends LitElement {
       min-height: auto;
       flex-shrink: 0;
     }
-    .group_20 {
+    .group_21 {
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
@@ -471,8 +481,12 @@ export default class AccountSample extends LitElement {
       </div>
       <div class="row-layout group_7">
         <div class="column-layout group_8">
-          <div class="row-layout page-title-1">
+          <div class="row-layout group_9">
             <igc-button class="button">
+              Button
+              <igc-ripple></igc-ripple>
+            </igc-button>
+            <igc-button ?disabled="${true}" class="button">
               Button
               <igc-ripple></igc-ripple>
             </igc-button>
@@ -480,17 +494,11 @@ export default class AccountSample extends LitElement {
               Button
               <igc-ripple></igc-ripple>
             </igc-button>
-            <igc-button variant="outlined" class="button">
-              Button
-              <igc-ripple></igc-ripple>
-            </igc-button>
-          </div>
-          <div class="row-layout page-title-1">
-            <igc-button ?disabled="${true}" class="button">
-              Button
-              <igc-ripple></igc-ripple>
-            </igc-button>
             <igc-button variant="flat" ?disabled="${true}" class="button">
+              Button
+              <igc-ripple></igc-ripple>
+            </igc-button>
+            <igc-button variant="outlined" class="button">
               Button
               <igc-ripple></igc-ripple>
             </igc-button>
@@ -501,7 +509,33 @@ export default class AccountSample extends LitElement {
           </div>
           <igc-tabs class="tabs">
             <igc-tab-panel class="column-layout tab-item-content">
-              <div class="column-layout group_9">
+              <div class="column-layout group_10">
+                <div class="row-layout group_9">
+                  <igc-button class="button">
+                    Button
+                    <igc-ripple></igc-ripple>
+                  </igc-button>
+                  <igc-button ?disabled="${true}" class="button">
+                    Button
+                    <igc-ripple></igc-ripple>
+                  </igc-button>
+                  <igc-button variant="flat" class="button">
+                    Button
+                    <igc-ripple></igc-ripple>
+                  </igc-button>
+                  <igc-button variant="flat" ?disabled="${true}" class="button">
+                    Button
+                    <igc-ripple></igc-ripple>
+                  </igc-button>
+                  <igc-button variant="outlined" class="button">
+                    Button
+                    <igc-ripple></igc-ripple>
+                  </igc-button>
+                  <igc-button variant="outlined" ?disabled="${true}" class="button">
+                    Button
+                    <igc-ripple></igc-ripple>
+                  </igc-button>
+                </div>
                 <div class="row-layout buttons">
                   <igc-button class="button_1">
                     <span class="material-icons">
@@ -541,15 +575,15 @@ export default class AccountSample extends LitElement {
                 </div>
                 <igc-accordion ?single-expand="${false}" class="accordion">
                   <igc-expansion-panel indicator-position="end">
-                    <div class="column-layout group_10">
-                      <div class="row-layout group_11">
+                    <div class="column-layout group_11">
+                      <div class="row-layout group_12">
                         <igc-avatar initials="JL" size="small" shape="circle" class="avatar avatar_1"></igc-avatar>
                         <a href class="typography__body-2 hyperlink">
                           Janine Labrune
                         </a>
                       </div>
-                      <div class="column-layout group_12">
-                        <div class="row-layout group_13">
+                      <div class="column-layout group_13">
+                        <div class="row-layout group_14">
                           <p class="typography__subtitle-2 text_2">
                             Account Name:
                           </p>
@@ -557,7 +591,7 @@ export default class AccountSample extends LitElement {
                             Thomas Hardy
                           </p>
                         </div>
-                        <div class="row-layout group_13">
+                        <div class="row-layout group_14">
                           <p class="typography__subtitle-2 text_2">
                             Title:
                           </p>
@@ -565,7 +599,7 @@ export default class AccountSample extends LitElement {
                             Owner
                           </p>
                         </div>
-                        <div class="row-layout group_14">
+                        <div class="row-layout group_15">
                           <p class="typography__subtitle-2 text_2">
                             Direct:
                           </p>
@@ -576,17 +610,17 @@ export default class AccountSample extends LitElement {
                     <span slot="title">Related Contacts (1)</span>
                   </igc-expansion-panel>
                   <igc-expansion-panel indicator-position="end">
-                    <div class="column-layout group_10">
-                      <div class="row-layout group_11">
-                        <div class="row-layout group_15">
+                    <div class="column-layout group_11">
+                      <div class="row-layout group_12">
+                        <div class="row-layout group_16">
                           <img src="/src/assets/Accounts Icon - Green.svg" class="image_1" />
                         </div>
                         <a href class="typography__body-2 hyperlink">
                           Around The Horn
                         </a>
                       </div>
-                      <div class="column-layout group_12">
-                        <div class="row-layout group_13">
+                      <div class="column-layout group_13">
+                        <div class="row-layout group_14">
                           <p class="typography__subtitle-2 text_2">
                             Stage:
                           </p>
@@ -594,7 +628,7 @@ export default class AccountSample extends LitElement {
                             Qualification
                           </p>
                         </div>
-                        <div class="row-layout group_13">
+                        <div class="row-layout group_14">
                           <p class="typography__subtitle-2 text_2">
                             Amount:
                           </p>
@@ -602,7 +636,7 @@ export default class AccountSample extends LitElement {
                             Owner
                           </p>
                         </div>
-                        <div class="row-layout group_13">
+                        <div class="row-layout group_14">
                           <p class="typography__subtitle-2 text_2">
                             Close Date:
                           </p>
@@ -654,7 +688,7 @@ export default class AccountSample extends LitElement {
                   </igc-expansion-panel>
                 </igc-accordion>
               </div>
-              <div class="row-layout group_16"></div>
+              <div class="row-layout group_17"></div>
             </igc-tab-panel>
             <igc-tab ?selected="${true}">
               <span class="material-icons">info</span>
@@ -672,10 +706,10 @@ export default class AccountSample extends LitElement {
             </igc-tab>
           </igc-tabs>
         </div>
-        <div class="column-layout group_17">
+        <div class="column-layout group_18">
           <igc-tabs class="tabs">
             <igc-tab-panel class="column-layout tab-item-content">
-              <div class="column-layout group_9">
+              <div class="column-layout group_10">
                 <div class="row-layout buttons_1">
                   <igc-button class="button_1">
                     <span class="material-icons">
@@ -707,13 +741,13 @@ export default class AccountSample extends LitElement {
                           <igc-avatar src="/src/assets/Calendar-Avatar-Icon.svg" size="small" class="avatar avatar_4"></igc-avatar>
                         </div>
                         <div>
-                          <div class="column-layout group_18">
-                            <div class="row-layout group_19">
+                          <div class="column-layout group_19">
+                            <div class="row-layout group_20">
                               <p class="typography__subtitle-2 text_3">
                                 Project Intro
                               </p>
                             </div>
-                            <div class="row-layout group_20">
+                            <div class="row-layout group_21">
                               <p class="typography__caption text_4">
                                 11/1/2022
                               </p>
@@ -735,13 +769,13 @@ export default class AccountSample extends LitElement {
                           <igc-avatar src="/src/assets/Calendar-Avatar-Icon.svg" size="small" class="avatar avatar_5"></igc-avatar>
                         </div>
                         <div>
-                          <div class="column-layout group_18">
-                            <div class="row-layout group_19">
+                          <div class="column-layout group_19">
+                            <div class="row-layout group_20">
                               <p class="typography__subtitle-2 text_3">
                                 Sync Meeting
                               </p>
                             </div>
-                            <div class="row-layout group_20">
+                            <div class="row-layout group_21">
                               <p class="typography__caption text_4">
                                 11/7/2022
                               </p>
@@ -763,13 +797,13 @@ export default class AccountSample extends LitElement {
                           <igc-avatar src="/src/assets/Calendar-Avatar-Icon.svg" size="small" class="avatar avatar_6"></igc-avatar>
                         </div>
                         <div>
-                          <div class="column-layout group_18">
-                            <div class="row-layout group_19">
+                          <div class="column-layout group_19">
+                            <div class="row-layout group_20">
                               <p class="typography__subtitle-2 text_3">
                                 Wrap Up Meeting
                               </p>
                             </div>
-                            <div class="row-layout group_20">
+                            <div class="row-layout group_21">
                               <p class="typography__caption text_4">
                                 11/14/2022
                               </p>
