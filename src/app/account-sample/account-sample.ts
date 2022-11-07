@@ -2,7 +2,7 @@ import { html, css, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { defineComponents, IgcButtonComponent, IgcExpansionPanelComponent, IgcIconComponent, IgcRippleComponent, IgcTabsComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcTabsComponent, IgcButtonComponent, IgcRippleComponent, IgcIconComponent, IgcExpansionPanelComponent);
+defineComponents(IgcButtonComponent, IgcRippleComponent, IgcTabsComponent, IgcIconComponent, IgcExpansionPanelComponent);
 
 @customElement('app-account-sample')
 export default class AccountSample extends LitElement {
@@ -136,13 +136,27 @@ export default class AccountSample extends LitElement {
       min-width: 576px;
       flex-grow: 2;
     }
+    .group_9 {
+      background-color: hsla(var(--ig-surface-500));
+      border-color: hsla(var(--ig-gray-200));
+      border-width: 1px;
+      border-style: solid;
+      justify-content: flex-start;
+      align-items: stretch;
+      align-content: flex-start;
+      gap: 24px;
+      position: relative;
+      padding: 16px;
+      min-width: min-content;
+      flex-grow: 1;
+    }
     .tabs {
       min-width: 0;
       min-height: 0;
       flex-grow: 1;
       flex-basis: 0;
     }
-    .group_9 {
+    .group_10 {
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
@@ -156,20 +170,6 @@ export default class AccountSample extends LitElement {
     .accordion {
       overflow-y: auto;
       flex-shrink: 0;
-    }
-    .group_10 {
-      background-color: hsla(var(--ig-surface-500));
-      border-color: hsla(var(--ig-gray-200));
-      border-width: 1px;
-      border-style: solid;
-      justify-content: flex-start;
-      align-items: stretch;
-      align-content: flex-start;
-      gap: 24px;
-      position: relative;
-      padding: 16px;
-      min-width: min-content;
-      flex-grow: 1;
     }
     .image {
       object-fit: cover;
@@ -290,80 +290,25 @@ export default class AccountSample extends LitElement {
       </div>
       <div class="row-layout group_7">
         <div class="column-layout group_8">
-          <igc-tabs class="tabs">
-            <igc-tab-panel class="row-layout tab-item-content">
-              <div class="column-layout group_9">
-                <div class="row-layout page-title-1">
-                  <igc-button class="button">
-                    Button
-                    <igc-ripple></igc-ripple>
-                  </igc-button>
-                  <igc-button class="button">
-                    <span class="material-icons">
-                      add
-                    </span>
-                    <span>Button</span>
-                    <igc-ripple></igc-ripple>
-                  </igc-button>
-                  <igc-button variant="outlined" class="button">
-                    Button
-                    <igc-ripple></igc-ripple>
-                  </igc-button>
-                  <igc-button variant="outlined" class="button">
-                    <span class="material-icons">
-                      add
-                    </span>
-                    <span>Button</span>
-                    <igc-ripple></igc-ripple>
-                  </igc-button>
-                  <igc-button variant="flat" class="button">
-                    Button
-                    <igc-ripple></igc-ripple>
-                  </igc-button>
-                  <igc-button variant="flat" class="button">
-                    <span class="material-icons">
-                      add
-                    </span>
-                    <span>Button</span>
-                    <igc-ripple></igc-ripple>
-                  </igc-button>
-                </div>
-                <igc-accordion ?single-expand="${false}" class="accordion">
-                  <igc-expansion-panel>
-                    <p class="typography__body-1 content"></p>
-                    <span slot="title">Title goes here...</span>
-                  </igc-expansion-panel>
-                  <igc-expansion-panel>
-                    <p class="typography__body-1 content"></p>
-                    <span slot="title">Title goes here...</span>
-                  </igc-expansion-panel>
-                  <igc-expansion-panel>
-                    <p class="typography__body-1 content"></p>
-                    <span slot="title">Title goes here...</span>
-                  </igc-expansion-panel>
-                </igc-accordion>
-              </div>
-            </igc-tab-panel>
-            <igc-tab ?selected="${true}">
-              <span class="material-icons">info</span>
-              Label
-            </igc-tab>
-            <igc-tab-panel class="row-layout tab-item-content"></igc-tab-panel>
-            <igc-tab ?disabled="${true}">
-              <span class="material-icons">info</span>
-              Label
-            </igc-tab>
-            <igc-tab-panel class="row-layout tab-item-content"></igc-tab-panel>
-            <igc-tab ?disabled="${true}">
-              <span class="material-icons">info</span>
-              Label
-            </igc-tab>
-          </igc-tabs>
+          <div class="row-layout page-title-1">
+            <igc-button class="button">
+              Button
+              <igc-ripple></igc-ripple>
+            </igc-button>
+            <igc-button variant="outlined" class="button">
+              Button
+              <igc-ripple></igc-ripple>
+            </igc-button>
+            <igc-button variant="flat" class="button">
+              Button
+              <igc-ripple></igc-ripple>
+            </igc-button>
+          </div>
         </div>
-        <div class="column-layout group_10">
+        <div class="column-layout group_9">
           <igc-tabs class="tabs">
             <igc-tab-panel class="row-layout tab-item-content">
-              <div class="column-layout group_9">
+              <div class="column-layout group_10">
                 <div class="row-layout page-title-1">
                   <igc-button class="button">
                     <span class="material-icons">
