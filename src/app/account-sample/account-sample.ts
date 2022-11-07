@@ -301,28 +301,14 @@ export default class AccountSample extends LitElement {
                     <span>Button</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
-                  <igc-button class="button">
+                  <igc-button variant="outlined" class="button">
                     <span class="material-icons">
                       add
                     </span>
                     <span>Button</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
-                  <igc-button class="button">
-                    <span class="material-icons">
-                      add
-                    </span>
-                    <span>Button</span>
-                    <igc-ripple></igc-ripple>
-                  </igc-button>
-                  <igc-button class="button">
-                    <span class="material-icons">
-                      add
-                    </span>
-                    <span>Button</span>
-                    <igc-ripple></igc-ripple>
-                  </igc-button>
-                  <igc-button class="button">
+                  <igc-button variant="flat" class="button">
                     <span class="material-icons">
                       add
                     </span>
