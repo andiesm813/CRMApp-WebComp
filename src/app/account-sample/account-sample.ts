@@ -110,33 +110,37 @@ export default class AccountSample extends LitElement {
     }
     .group_7 {
       background-color: hsla(var(--ig-gray-100));
+      flex-wrap: wrap;
       justify-content: flex-start;
       align-items: stretch;
-      align-content: flex-start;
+      align-content: stretch;
       gap: 12px;
+      overflow: auto;
       position: relative;
       padding: 12px;
-      min-width: 50px;
       min-height: 50px;
       flex-grow: 1;
       flex-basis: 0;
     }
     .group_8 {
       background-color: hsla(var(--ig-surface-500));
+      border-color: hsla(var(--ig-gray-200));
+      border-width: 1px;
+      border-style: solid;
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
+      gap: 24px;
       position: relative;
       padding: 16px;
-      min-width: 50px;
-      min-height: 50px;
+      min-width: 576px;
       flex-grow: 2;
     }
     .tabs {
       min-width: 0;
       min-height: 0;
       flex-grow: 1;
-      flex-basis: 0;
+      flex-shrink: 0;
     }
     .group_9 {
       justify-content: flex-start;
@@ -147,8 +151,16 @@ export default class AccountSample extends LitElement {
       padding: 24px 0 0;
       min-width: 50px;
       min-height: 50px;
-      flex-grow: 1;
-      flex-basis: 0;
+      flex-shrink: 0;
+    }
+    .buttons-1 {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: flex-start;
+      gap: 16px;
+      position: relative;
+      min-width: 50px;
     }
     .accordion {
       overflow-y: auto;
@@ -198,38 +210,37 @@ export default class AccountSample extends LitElement {
       min-width: 50px;
     }
     .group_15 {
-      justify-content: flex-start;
-      align-items: stretch;
+      background-color: rgba(71, 124, 41, 0.2);
+      justify-content: center;
+      align-items: center;
       align-content: flex-start;
       position: relative;
-      min-width: 50px;
-      min-height: 50px;
-      flex-grow: 1;
-      flex-basis: 0;
+      width: 40px;
+      height: 40px;
     }
     .group_16 {
       background-color: hsla(var(--ig-surface-500));
+      border-color: hsla(var(--ig-gray-200));
+      border-width: 1px;
+      border-style: solid;
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
+      gap: 24px;
       position: relative;
       padding: 16px;
-      min-width: 50px;
-      min-height: 50px;
+      min-width: min-content;
       flex-grow: 1;
+    }
+    .buttons {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: flex-start;
+      gap: 16px;
+      position: relative;
     }
     .group_17 {
-      justify-content: flex-start;
-      align-items: stretch;
-      align-content: flex-start;
-      position: relative;
-      padding: 24px 0 0;
-      min-width: 50px;
-      min-height: 50px;
-      flex-grow: 1;
-      flex-basis: 0;
-    }
-    .group_18 {
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
@@ -238,7 +249,7 @@ export default class AccountSample extends LitElement {
       min-width: 50px;
       min-height: 50px;
     }
-    .group_19 {
+    .group_18 {
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: stretch;
@@ -249,7 +260,7 @@ export default class AccountSample extends LitElement {
       min-height: auto;
       flex-shrink: 0;
     }
-    .group_20 {
+    .group_19 {
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
@@ -293,13 +304,19 @@ export default class AccountSample extends LitElement {
       height: max-content;
       min-width: 140px;
     }
+    .image_1 {
+      object-fit: cover;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
     .text_3 {
-      color: hsla(var(--ig-gray-800));
+      color: hsla(var(--ig-gray-600));
       height: max-content;
       min-width: min-content;
     }
     .text_4 {
-      color: hsla(var(--ig-gray-600));
+      color: hsla(var(--ig-gray-800));
       height: max-content;
       min-width: min-content;
     }
@@ -312,15 +329,30 @@ export default class AccountSample extends LitElement {
       background-color: hsla(var(--ig-secondary-200));
     }
     .avatar_2::part(base) {
-      background-color: transparent;
+      color: hsla(var(--ig-gray-500));
     }
     .avatar_3::part(base) {
-      background-color: transparent;
+      color: hsla(var(--ig-gray-500));
     }
     .avatar_4::part(base) {
       background-color: transparent;
     }
+    .avatar_5::part(base) {
+      background-color: transparent;
+    }
+    .avatar_6::part(base) {
+      background-color: transparent;
+    }
     .tab-item-content {
+      justify-content: flex-start;
+      align-items: stretch;
+      align-content: flex-start;
+      position: absolute;
+      height: 100%;
+      min-width: 100%;
+      min-height: 50px;
+    }
+    .tab-item-content_1 {
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
@@ -339,7 +371,15 @@ export default class AccountSample extends LitElement {
       width: max-content;
       height: max-content;
     }
+    .button_1 {
+      height: max-content;
+      flex-shrink: 0;
+    }
     .button::part(base) {
+      color: hsla(var(--ig-primary-500));
+      background-color: hsla(var(--ig-secondary-100));
+    }
+    .button_1::part(base) {
       color: hsla(var(--ig-primary-500));
       background-color: hsla(var(--ig-secondary-100));
     }
@@ -426,9 +466,9 @@ export default class AccountSample extends LitElement {
       <div class="row-layout group_7">
         <div class="column-layout group_8">
           <igc-tabs class="tabs">
-            <igc-tab-panel class="row-layout tab-item-content">
+            <igc-tab-panel class="column-layout tab-item-content">
               <div class="column-layout group_9">
-                <div class="row-layout page-title">
+                <div class="row-layout buttons-1">
                   <igc-button class="button">
                     <span class="material-icons">
                       person_add
@@ -454,18 +494,18 @@ export default class AccountSample extends LitElement {
                     <span class="material-icons">
                       note_add
                     </span>
-                    <span>Add Note</span>
+                    <span>Add note</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
                   <igc-button class="button">
                     <span class="material-icons">
                       file_copy
                     </span>
-                    <span>Add Files</span>
+                    <span>Add files</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
                 </div>
-                <igc-accordion ?single-expand="${false}" class="accordion">
+                <igc-accordion ?single-expand="${true}" class="accordion">
                   <igc-expansion-panel indicator-position="end">
                     <div class="column-layout group_10">
                       <div class="row-layout group_11">
@@ -502,20 +542,89 @@ export default class AccountSample extends LitElement {
                     <span slot="title">Related Contacts (1)</span>
                   </igc-expansion-panel>
                   <igc-expansion-panel indicator-position="end">
-                    <p class="typography__body-1 content"></p>
+                    <div class="column-layout group_10">
+                      <div class="row-layout group_11">
+                        <div class="row-layout group_15">
+                          <img src="/src/assets/Accounts Icon - Green.svg" class="image_1" />
+                        </div>
+                        <a href class="typography__body-2 hyperlink">
+                          Around The Horn
+                        </a>
+                      </div>
+                      <div class="column-layout group_12">
+                        <div class="row-layout group_13">
+                          <p class="typography__subtitle-2 text_2">
+                            Stage:
+                          </p>
+                          <p class="typography__body-2 text">
+                            Qualification
+                          </p>
+                        </div>
+                        <div class="row-layout group_13">
+                          <p class="typography__subtitle-2 text_2">
+                            Amount:
+                          </p>
+                          <p class="typography__body-2 text">
+                            Owner
+                          </p>
+                        </div>
+                        <div class="row-layout group_13">
+                          <p class="typography__subtitle-2 text_2">
+                            Close Date:
+                          </p>
+                          <p class="typography__body-2 text">
+                            9/12/2022
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                     <span slot="title">Opportunities (1)</span>
                   </igc-expansion-panel>
                   <igc-expansion-panel indicator-position="end">
-                    <p class="typography__body-1 content"></p>
+                    <igc-list class="list">
+                      <igc-list-item>
+                        <div slot="start">
+                          <igc-avatar size="small" shape="circle" class="avatar avatar_2">
+                            <span class="material-icons">insert_drive_file</span>
+                          </igc-avatar>
+                        </div>
+                        <div>
+                          <a href class="typography__body-2 content">
+                            Around-The-Horn-Contract-2022.docx
+                          </a>
+                        </div>
+                      </igc-list-item>
+                      <igc-list-item>
+                        <div slot="start">
+                          <igc-avatar size="small" shape="circle" class="avatar avatar_3">
+                            <span class="material-icons">insert_drive_file</span>
+                          </igc-avatar>
+                        </div>
+                        <div>
+                          <a href class="typography__body-2 content">
+                            Around-The-Horn-Contract-2021.docx
+                          </a>
+                        </div>
+                      </igc-list-item>
+                    </igc-list>
                     <span slot="title">Contracts (2)</span>
                   </igc-expansion-panel>
                   <igc-expansion-panel indicator-position="end">
+                    <p class="typography__body-2 text_3">
+                      No cases filed.
+                    </p>
                     <span slot="title">Cases (0)</span>
                   </igc-expansion-panel>
                   <igc-expansion-panel indicator-position="end">
+                    <p class="typography__body-2 text_3">
+                      No notes added.
+                    </p>
                     <span slot="title">Notes (0)</span>
                   </igc-expansion-panel>
                   <igc-expansion-panel indicator-position="end">
+                    <p class="typography__body-2 text_3">
+                      No files uploaded
+                    </p>
                     <span slot="title">Files (0)</span>
                   </igc-expansion-panel>
                 </igc-accordion>
@@ -525,14 +634,12 @@ export default class AccountSample extends LitElement {
               <span class="material-icons">info</span>
               Related
             </igc-tab>
-            <igc-tab-panel class="row-layout tab-item-content"></igc-tab-panel>
+            <igc-tab-panel class="row-layout tab-item-content_1"></igc-tab-panel>
             <igc-tab>
               <span class="material-icons">info</span>
               Details
             </igc-tab>
-            <igc-tab-panel class="row-layout tab-item-content">
-              <div class="column-layout group_15"></div>
-            </igc-tab-panel>
+            <igc-tab-panel class="row-layout tab-item-content_1"></igc-tab-panel>
             <igc-tab>
               <span class="material-icons">info</span>
               News
@@ -541,53 +648,53 @@ export default class AccountSample extends LitElement {
         </div>
         <div class="column-layout group_16">
           <igc-tabs class="tabs">
-            <igc-tab-panel class="row-layout tab-item-content">
-              <div class="column-layout group_17">
-                <div class="row-layout page-title">
+            <igc-tab-panel class="column-layout tab-item-content">
+              <div class="column-layout group_9">
+                <div class="row-layout buttons">
                   <igc-button class="button">
                     <span class="material-icons">
                       calendar_today
                     </span>
-                    <span>New meeting</span>
+                    <span>New Meeting</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
                   <igc-button class="button">
                     <span class="material-icons">
                       assignment
                     </span>
-                    <span>New Task</span>
+                    <span>New task</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
-                  <igc-button class="button">
+                  <igc-button class="button_1">
                     <span class="material-icons">
                       call
                     </span>
-                    <span>Log a Call</span>
+                    <span>Log a call</span>
                     <igc-ripple></igc-ripple>
                   </igc-button>
                 </div>
-                <igc-accordion ?single-expand="${false}" class="accordion">
+                <igc-accordion ?single-expand="${true}" class="accordion">
                   <igc-expansion-panel indicator-position="end">
                     <igc-list class="list">
                       <igc-list-item>
                         <div slot="start">
-                          <igc-avatar src="/src/assets/Calendar-Avatar-Icon.svg" size="small" class="avatar avatar_2"></igc-avatar>
+                          <igc-avatar src="/src/assets/Calendar-Avatar-Icon.svg" size="small" class="avatar avatar_4"></igc-avatar>
                         </div>
                         <div>
-                          <div class="column-layout group_18">
-                            <div class="row-layout group_19">
-                              <p class="typography__subtitle-2 text_3">
+                          <div class="column-layout group_17">
+                            <div class="row-layout group_18">
+                              <p class="typography__subtitle-2 text_4">
                                 Project Intro
                               </p>
                             </div>
-                            <div class="row-layout group_20">
-                              <p class="typography__caption text_4">
+                            <div class="row-layout group_19">
+                              <p class="typography__caption text_3">
                                 11/1/2022
                               </p>
-                              <p class="typography__caption text_4">
+                              <p class="typography__caption text_3">
                                 -
                               </p>
-                              <p class="typography__caption text_4">
+                              <p class="typography__caption text_3">
                                 10am
                               </p>
                             </div>
@@ -599,23 +706,23 @@ export default class AccountSample extends LitElement {
                       </igc-list-item>
                       <igc-list-item>
                         <div slot="start">
-                          <igc-avatar src="/src/assets/Calendar-Avatar-Icon.svg" size="small" class="avatar avatar_3"></igc-avatar>
+                          <igc-avatar src="/src/assets/Calendar-Avatar-Icon.svg" size="small" class="avatar avatar_5"></igc-avatar>
                         </div>
                         <div>
-                          <div class="column-layout group_18">
-                            <div class="row-layout group_19">
-                              <p class="typography__subtitle-2 text_3">
+                          <div class="column-layout group_17">
+                            <div class="row-layout group_18">
+                              <p class="typography__subtitle-2 text_4">
                                 Sync Meeting
                               </p>
                             </div>
-                            <div class="row-layout group_20">
-                              <p class="typography__caption text_4">
+                            <div class="row-layout group_19">
+                              <p class="typography__caption text_3">
                                 11/7/2022
                               </p>
-                              <p class="typography__caption text_4">
+                              <p class="typography__caption text_3">
                                 -
                               </p>
-                              <p class="typography__caption text_4">
+                              <p class="typography__caption text_3">
                                 2pm
                               </p>
                             </div>
@@ -627,23 +734,23 @@ export default class AccountSample extends LitElement {
                       </igc-list-item>
                       <igc-list-item>
                         <div slot="start">
-                          <igc-avatar src="/src/assets/Calendar-Avatar-Icon.svg" size="small" class="avatar avatar_4"></igc-avatar>
+                          <igc-avatar src="/src/assets/Calendar-Avatar-Icon.svg" size="small" class="avatar avatar_6"></igc-avatar>
                         </div>
                         <div>
-                          <div class="column-layout group_18">
-                            <div class="row-layout group_19">
-                              <p class="typography__subtitle-2 text_3">
+                          <div class="column-layout group_17">
+                            <div class="row-layout group_18">
+                              <p class="typography__subtitle-2 text_4">
                                 Wrap Up Meeting
                               </p>
                             </div>
-                            <div class="row-layout group_20">
-                              <p class="typography__caption text_4">
+                            <div class="row-layout group_19">
+                              <p class="typography__caption text_3">
                                 11/14/2022
                               </p>
-                              <p class="typography__caption text_4">
+                              <p class="typography__caption text_3">
                                 -
                               </p>
-                              <p class="typography__caption text_4">
+                              <p class="typography__caption text_3">
                                 4pm
                               </p>
                             </div>
@@ -657,9 +764,15 @@ export default class AccountSample extends LitElement {
                     <span slot="title">Upcoming Events (3)</span>
                   </igc-expansion-panel>
                   <igc-expansion-panel indicator-position="end">
+                    <p class="typography__body-2 text_3">
+                      No tasks added.
+                    </p>
                     <span slot="title">Tasks (0)</span>
                   </igc-expansion-panel>
                   <igc-expansion-panel indicator-position="end">
+                    <p class="typography__body-2 text_3">
+                      No call logged.
+                    </p>
                     <span slot="title">Call Logs (0)</span>
                   </igc-expansion-panel>
                 </igc-accordion>
@@ -669,7 +782,7 @@ export default class AccountSample extends LitElement {
               <span class="material-icons">info</span>
               Activity
             </igc-tab>
-            <igc-tab-panel class="row-layout tab-item-content"></igc-tab-panel>
+            <igc-tab-panel class="row-layout tab-item-content_1"></igc-tab-panel>
             <igc-tab>
               <span class="material-icons">info</span>
               Conversations
